@@ -14,7 +14,7 @@ Add dependency into `BuildConfig.groovy`:
 
 ```
 plugins {
-    compile "org.grails.plugins:hsoy-templates:0.3"
+    compile ":hsoy-templates:0.3"
 }
 ```
 

@@ -1,16 +1,17 @@
-class GrailsHsoyTemplatesGrailsPlugin {
+class HsoyTemplatesGrailsPlugin {
     // the plugin version
     def version = "0.3"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.0 > *"
     // the other plugins this plugin depends on
-    def dependsOn = [:]
+    def dependsOn = [
+            'resources': '1.2.RC2 > *'
+    ]
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
         "grails-app/views/error.gsp"
     ]
 
-    // TODO Fill in these fields
     def title = "Hsoy Templates Plugin" // Headline display name of the plugin
     def author = "Igor Artamonov"
     def authorEmail = "igor@artamonov.ru"
