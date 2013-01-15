@@ -11,7 +11,7 @@ class GrailsHsoyTemplatesGrailsPlugin {
     ]
 
     // TODO Fill in these fields
-    def title = "Grails Hsoy Templates Plugin" // Headline display name of the plugin
+    def title = "Hsoy Templates Plugin" // Headline display name of the plugin
     def author = "Igor Artamonov"
     def authorEmail = "igor@artamonov.ru"
     def description = '''\
