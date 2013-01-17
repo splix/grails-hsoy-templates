@@ -9,3 +9,6 @@
 target
 *.log
 /target
+web-app/WEB-INF
+plugin.xml
+*.zip
