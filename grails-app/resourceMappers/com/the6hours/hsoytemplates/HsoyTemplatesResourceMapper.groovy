@@ -1,14 +1,11 @@
 package com.the6hours.hsoytemplates
 
-import org.codehaus.groovy.grails.plugins.support.aware.GrailsApplicationAware
 import org.codehaus.groovy.grails.commons.GrailsApplication
+import org.codehaus.groovy.grails.plugins.support.aware.GrailsApplicationAware
 import org.grails.plugin.resource.mapper.MapperPhase
 
-
 /**
- * 
  * @author Igor Artamonov (http://igorartamonov.com)
- * @since 04.10.12
  */
 class HsoyTemplatesResourceMapper implements GrailsApplicationAware {
 
@@ -23,7 +20,7 @@ class HsoyTemplatesResourceMapper implements GrailsApplicationAware {
         File target
 
         if (resource.sourceUrl) {
-            File input = getOriginalFileSystemFile(resource.sourceUrl);
+            File input = getOriginalFileSystemFile(resource.sourceUrl)
             target = new File(generateCompiledFileFromOriginal(originalFile.absolutePath))
 
             if (log.debugEnabled) {
